@@ -1,0 +1,62 @@
+/* Add constants to page root*/
+
+
+/* :root selector represents the <html> element in the HTML page*/
+
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+
+/* Selector. body is the element these styles apply to.*/
+
+body {
+    font-family: helvetica;
+    color: var(--fontColor);
+    background: var(--bg);
+}
+
+li {
+    list-style: circle;
+}
+
+
+/* .list is a class selector */
+
+.list {
+    list-style: square;
+}
+
+
+/* #msg is an ID selector. */
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black)
+}
+
+
+/* Style the button*/
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
